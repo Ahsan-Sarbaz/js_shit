@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shit.JS</title>
+
+    <script src="main.js"></script>
+
+
+    <style>
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 100vh;
+            width: 100vw;
+        }
+        
+        input {
+            font-size: xx-large;
+        }
+
+    </style>
+</head>
+<body>
+    
+
+
+    <div x-data='{ "name": "John Doe", "age": 30 }'>
+        <p x-html="name"></p>
+        <div x-text="age"></div>
+        <input type="text" x-model="name">
+        <input type="number" x-model="age">
+    </div>
+
+
+    <div x-data='{ "address": "123 Main St", "street": 33232 }'>
+        <p x-text="address"></p>
+        <div x-text="street"></div>
+        <input type="text" x-model="address">
+        <input type="number" x-model="street">
+    </div>
+
+
+</body>
+</html>
