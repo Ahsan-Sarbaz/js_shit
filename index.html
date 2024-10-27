@@ -28,11 +28,13 @@
     
 
 
-    <div x-data='{ "name": "John Doe", "age": 30 }'>
+    <div x-data='{ "name": "John Doe", "age": 30, "married": true }'>
         <p x-html="name"></p>
         <div x-text="age"></div>
+        <div x-text="married"></div>
         <input type="text" x-model="name">
         <input type="number" x-model="age">
+        <input type="checkbox" x-model="married">
     </div>
 
 
